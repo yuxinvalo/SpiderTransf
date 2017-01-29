@@ -56,7 +56,7 @@ On lance une requête au serveur de base de données avec l'authentification du 
 Si on veut savoir l'emploi du temps les prochains départs à Montparnasse, la requête est:
 https://api.sncf.com/v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87391003/departures?datetime=20161125T140917  
 où `87391003` est le code de la station Montparnasse, on peut retrouver tous les code des station de france sur un autre fichier sur ce site, et `departures?` est le mot clé de cette requête avec la date 2016-11-25 14:09:17.  Et on obtient le résultat sur web:  
-![](/home/tearsyu/Pictures/capt_monparnasse.png)  
+![](./screenshot/capt_monparnasse.png)  
 Mais c'est difficile à lire ces données, il y a beaucoup d'information inutile, on peut écrire un petit programme pour filtrer ces données.
 
 ### Blocks du code
@@ -162,13 +162,13 @@ Example:
 
 Par exemple, on cherche le train le pls tôt de Paris est à Nancy le Nancy 2017-02-01, la ligne de commande est   
 `$ python3 creepTicket.py -t "Paris Est" Nancy 2017-02-01`   
-![](/home/tearsyu/Pictures/cpt_sncf.png)  
+![](./screenshot/cpt_sncf.png)  
 
 Vous pouvez aussi préciser le temps comme 2016-10-01-20-30-00 si vous voulez, sinon il affiche toujours le train le plus tôt correspondant.       
 
 Si on veut chercher les covoiturages:   
 `python3 creepTicket.py -c Paris Strasbourg 2017-01-30`  
-![](/home/tearsyu/Pictures/cpt_bla.png)
+![](./screenshot/cpt_bla.png)
 <br/>
 <br/>
 <br/>
